@@ -17,9 +17,11 @@ public class Fibonnaci {
        List<Integer> fibonnaciElements = new ArrayList<Integer>();
        int limit = 15;
        for (int i = 0; i < limit; i++) {
+                // Adiciona os dois primeiros números da sequência
            if (i == 0 || i == 1) {
                fibonnaciElements.add(i);
            } else {
+                // Adiciona os próximos números da sequência
                fibonnaciElements.add(fibonnaciElements.get(i - 1) + fibonnaciElements.get(i - 2));
            }
        }
